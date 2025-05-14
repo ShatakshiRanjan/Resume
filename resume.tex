@@ -1,0 +1,154 @@
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry} % Manages margins
+\usepackage{longtable}
+\pagestyle{empty} % Removes page numbering
+\raggedright % Left-aligns content without justification
+\setlist[itemize]{left=0pt} % Removes indentation in itemize lists
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% Custom command for areas with a title
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+% Custom line under section headers
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+% Header style for section titles
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\begin{document}
+\vspace*{-35pt}
+
+\begin{center}
+{\Large \scshape Shatakshi Ranjan}\\
+\vspace{2pt}
+\small{ \href{mailto:shatakshiranjan02@gmail.com}{shatakshiranjan02@gmail.com}  | \href{tel:6097217220}{+1(609)721-7220} | \href{https://github.com/ShatakshiRanjan}{GitHub: ShatakshiRanjan}  | \href{https://www.linkedin.com/in/shatakshi-ranjan/}{LinkedIn: shatakshi-ranjan}}\\
+\end{center}
+\vspace{-4pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Education}
+\textbf{Bachelors of Science}  \hfill \textit{Sept. 2021 - May 2025}\\
+{\small
+Rutgers University-New Brunswick \hfill \textit{New Jersey, USA}\\
+Double Major in Computer Science \& Information Technology and Informatics
+{\hfill \textit{GPA: 3.74}}\\
+}
+\vspace{0.5mm} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Professional Experience}
+
+\textbf{Reliance JIO} \hfill  \textit{Mumbai, India} | \textit{June 2024 - August 2024}
+\vspace{-2.5mm}
+\begin{itemize} \itemsep -4pt \item[] \textit{\textbf{Cyber Security Intern - Data Division}}
+\item Developed \textbf{\href{https://github.com/ShatakshiRanjan/JIOWebDesign}{Taskify}}, a scalable web portal for task and project management, enabling team collaboration and real-time tracking of deadlines, milestones, and performance, boosting productivity and transparency by 45\%.
+\item Integrated a community chat system for team members, allowing seamless communication and collaboration, with automatic archiving for efficient message management and reducing clutter in the conversation history.
+\item Collaborated with InfoSec specialists to ensure data security and compliance, optimizing big data pipelines with Apache NiFi and Spark to automate data collection, processing, and analysis, reducing manual processing time by 30\%.
+\item Enhanced platform security by implementing authentication and conducting vulnerability tests to mitigate risks.
+\end{itemize}
+\vspace{-2mm}
+\textbf{Rutgers University - Computer Science Department} \hfill \textit{New Jersey, USA} |\textit{Sept. 2023 - Present}
+\vspace{-2.5mm}
+\begin{itemize} \itemsep -4pt
+    \item[] \textit{\textbf{Student Community Manager - Coding \& Social Lounge (CSL)}}
+    \item Manage CSL facilities, overseeing 50+ iLab servers, ensuring seamless access for students, and performing routine tests and maintenance to maintain server integrity for coursework, research, and collaboration.
+    \item Provide tutoring and mentoring for a wide range of computer science courses, assisting over 130 students per semester with debugging, coding, and understanding complex concepts. 
+    \item Host workshops and social events for students, fostering a collaborative and engaging community within the CSL.
+    \item Contribute to Scarlet Labs, a first pilot project optimizing Rutgers University processes, helping define its structure and future direction through feedback and insights gathered from presenting our work to the computer science department.
+    \item Engineered the CSL Queue System for tutoring, reducing wait times by 65\% and improving student access to help and mentorship, now serving as the catalyst for the Scarlet Labs initiative. Refer to the project section for more details. 
+\end{itemize}
+
+\vspace{-2mm}
+\textbf{Women in Computer Science (WiCS) – Rutgers University  } \hfill  \textit{New Jersey, USA} | \textit{May 2022 - December 2023}
+\vspace{-2.5mm}
+\begin{itemize} \itemsep -4pt
+     \item[] \textit{\textbf{Marketing Director (May 2022 – May 2023) \& HackHERS Director (May 2023 – Dec 2023)}}
+     \item Designed and maintained the organization's and HackHERS websites with responsive, dynamic web pages, implementing effective SEO strategies that doubled web traffic and participant sign-ups.
+    \item Led cross-functional teams in organizing HackHERS, New Jersey's largest female, femme, and non-binary hackathon, attracting 200+ participants and securing sponsorships exceeding \$26,000, enhancing the event's scale and impact.
+    \item Managed social media platforms, executing targeted campaigns that boosted event attendance and member engagement.
+\end{itemize}
+\vspace{-2mm} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Projects
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Projects / Open-Source}
+
+\textbf{\href{https://github.com/Rutgers-CSL}{CSL Queue System}} \hfill React, Python, JavaScript\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3.5pt
+    \item Developed a web-based queue system to efficiently manage 600+ unique users per semester, utilizing real-time data synchronization and automated queue management to optimize student access to tutoring and mentorship services.
+    \item Implemented data tracking for key metrics like \textit{busiest days, course requiring the most assistance, and most frequent students seeking mentorship,} enabling data-driven decisions to improve CSL operations.
+    \item Integrated Google APIs to sync data from Google Forms in real-time, enabling seamless communication and displaying up-to-date information, enhancing user experience and operational efficiency.
+    \item Currently revamping the system to enhance scalability and functionality, contributing to the Scarlet Labs initiative.
+\end{itemize}
+\vspace*{-1mm}
+\textbf{\href{https://github.com/ShatakshiRanjan/Recommendation-systems}{Collaborative Filtering-based Recommendation System}} \hfill Python, Pandas, Scikit-learn
+\vspace{-2.5mm}
+\begin{itemize} \itemsep -3.5pt
+\item Built a personalized recommendation system using the MovieLens dataset, delivering top-N movie recommendations and evaluating performance using key metrics (e.g., MAE, RMSE) to improve accuracy and user satisfaction.
+\item Preprocessed and cleaned raw data with techniques like data imputation and feature scaling, ensuring consistent data quality and improving model accuracy and training efficiency.
+\item Achieved performance results such as MAE (0.7393) and RMSE (0.9501), validating the model's accuracy and efficiency.
+\item Integrated explainability features, such as genre-based filtering and anonymized user data, to improve trust in the system and ensure users felt comfortable with their personalized recommendations.
+\item Presented methodology and results in a detailed \textbf{\href{https://docs.google.com/presentation/d/1r65Cy6-eKkuGI6xonAQxm5vqnZ0_YV5kaQh9pkjvJF0/edit?usp=sharing}{presentation}}, providing stakeholders with clear insights on the system's performance, its strengths, and potential improvements.
+\end{itemize}
+\vspace{-1mm}
+\textbf{\href{https://devpost.com/software/mama-s-garden}{Mama's Garden}} \hfill Arduino, Raspberry Pi, Python (Flask)
+\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3.5pt
+    \item Engineered an IoT solution using Arduino and Raspberry Pi to monitor environmental factors like humidity, temperature, sunlight, water level, and soil moisture, automating irrigation with a relay-controlled pump for optimized plant care.
+\item Built a data processing pipeline with Python, storing sensor data in MongoDB, and developed a Flask-based web interface that visualizes the data through interactive graphs, providing real-time insights.
+\item Led API integration to connect real-time data with Gemini AI, leveraging AI-driven insights for automated reporting.
+\item \textbf{Best Social Good Track Winner} at \textit{HackHERs 2025}, recognized for innovative contributions to social impact.
+\end{itemize}
+\vspace{-2mm}
+
+\header{Technical Skills}
+\vspace{0mm}
+
+\textbf{Programming \& Development:} 
+{\small
+Java, Python, C\#, JavaScript/TypeScript, React, Vue.js, Unity, Git, Docker, Flask, Django, Tailwind CSS, HTML/CSS, UI/UX (Figma), API Development \& Integration, Microservices, CI/CD Pipeline\\
+}
+\textbf{Data \& Machine Learning:} 
+{\small
+Machine Learning, Data Analysis, Big Data (Hadoop, Spark), MongoDB, SQL, MATLAB, Matplotlib, Numpy, Scikit-Learn, Pandas, TensorFlow, Tableau, OpenCV, MediaPipe\\
+}
+\textbf{Systems \& Cloud Platforms:} 
+{\small
+Windows, Linux/Unix, PowerShell, Apache, Google Cloud, AWS
+}
+
+
+
+\end{document}
